@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Emerion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: radial-gradient(circle at top, #1e3c72, #0a0f2c);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #eaf3ff;
+        }
+
+        .card {
+            background: rgba(15, 25, 60, 0.65);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 50px 45px;
+            text-align: center;
+            box-shadow: 0 0 60px rgba(0, 140, 255, 0.25);
+            max-width: 420px;
+            width: 90%;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 20px rgba(0, 150, 255, 0.5));
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 2em;
+            letter-spacing: 1px;
+        }
+
+        p {
+            opacity: 0.85;
+            margin-bottom: 30px;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 32px;
+            background: linear-gradient(135deg, #1e90ff, #00bfff);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(0, 170, 255, 0.6);
+            transition: all 0.25s ease;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 0 40px rgba(0, 200, 255, 0.9);
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 0.8em;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <!-- Logo -->
+        <img src="assets/logo.png" alt="Logo Launcher" class="logo">
+
+        <h1>Minecraft Launcher</h1>
+        <p>Télécharge le launcher officiel et rejoins l’aventure</p>
+
+        <a href="files/Emerion Launcher-1.1.0.exe" download class="download-btn">
+            ⬇ Télécharger le launcher
+        </a>
+
+        <div class="footer">
+            Compatible Windows • Version 1.1.0
+        </div>
+    </div>
+</body>
+
+</html>
