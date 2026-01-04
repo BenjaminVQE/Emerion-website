@@ -1,0 +1,9 @@
+services:
+  launcher-site:
+    build: .
+    container_name: minecraft-launcher-site
+    ports:
+      - "3051:80"
+    volumes:
+      - ~/Emerion/downloads:/usr/share/nginx/html/downloads
+    restart: unless-stopped
