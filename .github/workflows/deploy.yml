@@ -40,5 +40,5 @@ jobs:
             sudo docker stop emerion-container || true
             sudo docker rm emerion-container || true
             echo "--Running container--"
-            sudo docker run -p 3050:80 -v /home/debian/Emerion/downloads:/usr/share/nginx/html/downloads --name emerion-container -d $REGISTRY_NAME/emerion
+            sudo docker run -p 3051:80 -v /home/debian/Emerion/downloads:/usr/share/nginx/html/downloads --name emerion-container -d $REGISTRY_NAME/emerion
           EOF
